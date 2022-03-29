@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <h1>Team Builder App</h1>
+      <Form values="values"></Form>
     </div>
   );
 }
