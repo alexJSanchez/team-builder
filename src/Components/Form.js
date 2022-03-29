@@ -2,14 +2,18 @@ import React from 'react';
 
 const Form = (props) => {
 
-    const handleChange = Event => {
-        const { name, value } = Event.target;
-
+    const handleChange = event => {
+        const { name, value } = event.target;
         props.change(name,value);
     }
 
+    const handleSubmit = event => {
+        event.preventDefault(); 
+        props.submit();
+    }
+
     return(
-        <form>
+        <form onSubmit={handleSubmit}>
             <label>Name
             <input 
                 placeholder='Your Name Here'
