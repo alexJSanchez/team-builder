@@ -17,7 +17,7 @@ const Form = (props) => {
             <label>Name
             <input 
                 placeholder='Your Name Here'
-                value={values.name}
+                value={props.values.name}
                 name='name'
                 onChange={handleChange}
             />
@@ -25,7 +25,7 @@ const Form = (props) => {
             <label>Email
             <input 
                 placeholder='Your Email Here'
-                value={values.email}
+                value={props.values.email}
                 name='email'
                 onChange={handleChange}
             />
@@ -33,7 +33,7 @@ const Form = (props) => {
             <label>Role
             <input 
                 placeholder='What is Your Role'
-                value={values.role}
+                value={props.values.role}
                 name='role'
                 onChange={handleChange}
             />
